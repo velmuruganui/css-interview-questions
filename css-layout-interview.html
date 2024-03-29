@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Interview</title>
+    <style>
+        *{
+            margin:0;
+        }
+        body{
+            text-align: center;
+        }
+        .app{
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            header{ background-color: red; height: 100px;}
+            .main{
+                display: flex;
+                flex-grow: 1;
+                .left{ background-color: blue; width: 150px; } 
+                .middle{ background-color: teal; flex-grow: 1;  }
+                .right{ background-color: orange  ; width: 150px;}
+            }
+            footer{ background-color:aqua;height: 100px; }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="app">
+        <header>Header</header>
+        <div class="main">
+          <div class="left">Left</div>
+          <div class="middle">Middle</div>
+          <div class="right">Right</div>
+        </div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
